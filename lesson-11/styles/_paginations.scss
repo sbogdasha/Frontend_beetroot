@@ -1,0 +1,60 @@
+.main {
+  &__paginations {
+    @include flex-column;
+  }
+  &__paginations-container {
+    @include flex-between;
+    flex-wrap: wrap;
+  }
+}
+.pagination {
+  @include flex-between;
+  width: 368px;
+  height: 136px;
+  &__case,
+  &__case-3d {
+    @include flex-center;
+    width: 46px;
+    height: 46px;
+    text-decoration: none;
+    background-color: #e7eaeb;
+    color: #454c4d;
+    font-size: 20px;
+    font-family: $font-main;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  &__case-3d {
+    background-image: linear-gradient(#f3f6f7, #d9dcdd);
+    border: 1px solid #d4d7d5;
+    border-bottom: 2px solid #d4d7d5;
+  }
+  &__case-3d--green_active {
+    @include paginations-3d-active(green);
+  }
+  &__case-3d--yellow_active {
+    @include paginations-3d-active(yellow);
+  }
+  &__case-3d--red_active {
+    @include paginations-3d-active(red);
+  }
+  &__case-3d--blue_active {
+    @include paginations-3d-active(blue);
+  }
+  &__case--green_active {
+    @include paginations-active(green);
+  }
+  &__case--yellow_active {
+    @include paginations-active(yellow);
+  }
+  &__case--red_active {
+    @include paginations-active(red);
+  }
+  &__case--blue_active {
+    @include paginations-active(green);
+  }
+  &__case--left_arrow,
+  &__case--right_arrow {
+    background-color: #cacfd2;
+  }
+}

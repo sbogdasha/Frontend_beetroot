@@ -1,0 +1,166 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 65%;
+    &__container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    &__top-container {
+        display: flex;
+        width: 150px;
+        height: 60px;
+        justify-content: space-between;
+    }
+    &__middle-container {
+        display: flex;
+        width: 100%;
+        height: 65%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__bottom-container {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__label {
+        display: flex;
+        height: 10%;
+        align-items: flex-end;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    &__link {
+        display: flex;
+        color: $color-font-main;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        height: 28px;
+        &--top {
+            opacity: 0.7;
+            &:hover {
+                border-bottom: 2px solid $color-hover-top-link;
+                opacity: 1;
+            }
+        }
+        &--active {
+            border-bottom: 2px solid $color-hover-top-link;
+            opacity: 1;
+        }
+        &--bottom {
+            color: $color-font-add;
+            border-bottom: 2px solid $color-hover-bottom-link;
+            &:hover {
+                color: $color-font-main;
+                border-bottom: 2px solid rgba(150, 193, 218, 1);
+            }
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__input {
+        display: flex;
+        width: 100%;
+        height: 55px;
+        padding: 10px;
+        background: transparent;
+        border: 3px solid $color-border-input;
+        color: $color-font-main;
+        font-weight: 600;
+        font-size: 17px;
+        &:focus {
+            outline: none;
+            border: 3px solid $color-border-input-focus;
+        }
+    }
+    &__button-container {
+        height: 60px;
+    }
+    &__button {
+        width: 100%;
+        height: 100%;
+        background-color: $color-button;
+        border: none;
+        color: $color-font-main;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            transform: scale(0.99);
+        }
+    }
+    &__checkbox-container {
+        display: flex;
+        height: 20px;
+        width: 200px;
+        margin-bottom: 50px;
+        justify-content: space-between;
+      }
+      &__checkmark-container {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    &__checkmark-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: $color-bg-main;
+      }
+    &__checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+        &__checkmark-container &__checkbox:checked ~ &__checkmark:after {
+        display: block;
+      }
+      &__checkmark-container &__checkbox:checked ~ &__checkmark {
+        background-color: $color-bg-checkbox;
+      }
+      &__checkmark-container &__checkmark:after {
+        left: 7px;
+        top: 3px;
+        width: 4px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      &__checbox-text {
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+          letter-spacing: 2px;
+          font-weight: 600;
+
+      }
+}

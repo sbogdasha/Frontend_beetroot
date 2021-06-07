@@ -1,0 +1,122 @@
+.move-boat:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: url("../images/steam.png") no-repeat;
+  background-size: 120px;
+  position: absolute;
+  top: -50%;
+  left: -5%;
+  opacity: 0;
+}
+.move-boat {
+  position: absolute;
+  bottom: 10px;
+  -webkit-transition: left 2s linear;
+  transition: left 2s ease-in;
+  left: 0;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 1600px;
+  height: 150px;
+  left: -50%;
+}
+.sun {
+  position: absolute;
+  right: 0;
+}
+.cloud {
+  position: absolute;
+  right: -150px;
+  z-index: 1;
+}
+/* Write your code */
+
+.wave {
+  animation: wave-animate 2.5s infinite linear;
+}
+
+.move-boat {
+  animation: boat-move 1.2s infinite linear;
+}
+
+.animation-box {
+  animation: bg-pulse 1.5s infinite linear;
+}
+
+.cloud {
+  animation: cloud-move 1.5s infinite linear;
+}
+
+.move-boat:after {
+  animation: smoke 0.75s infinite linear;
+}
+
+.sun {
+  animation: sun-rotate 7s infinite linear;
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(3%);
+    opacity: 1;
+  }
+}
+
+@keyframes cloud-move {
+  0%,
+  100% {
+    right: -150px;
+  }
+  50% {
+    right: -50px;
+  }
+}
+
+@keyframes bg-pulse {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #262f37;
+  }
+}
+
+@keyframes boat-move {
+  0% {
+    left: 0;
+    bottom: 10px;
+    transform: rotate(-20deg);
+  }
+  50% {
+    bottom: 0px;
+    bottom: 5px;
+    transform: rotate(10deg);
+  }
+  100% {
+    left: 35%;
+    bottom: 10px;
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes wave-animate {
+  from {
+    left: 0;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes sun-rotate {
+  to {
+    transform: rotate(-360deg);
+  }
+}

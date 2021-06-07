@@ -1,0 +1,41 @@
+.subscribe {
+  @include container-width;
+  &__container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title-container {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  &__description {
+    width: 560px;
+    font-size: 17px;
+  }
+  &__form {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+  }
+  &__email {
+    display: flex;
+    width: 570px;
+    border: 1px solid $color-border;
+    outline: none;
+    padding: 0 14px;
+    font-size: 15px;
+    font-weight: 600;
+    &::placeholder {
+      font-family: $font-main;
+      opacity: 0.5;
+    }
+  }
+}

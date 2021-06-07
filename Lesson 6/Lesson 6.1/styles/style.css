@@ -1,0 +1,124 @@
+
+@font-face {
+     font-family: 'Playfair Display';
+     src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.eot');
+     src: local('../fonts/PlayfairDisplay/PlayfairDisplay Regular'), local('fonts/PlayfairDisplay/PlayfairDisplay-Regular'),
+          url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff'),
+          url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     --main-font-size: 18pt;
+     --text-color: #808080;
+     box-sizing: border-box;
+}
+
+
+.container {
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(250,250,250);
+     width: 80em; 
+     height: 60em;
+}
+
+.content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 70em;
+     height: 47em;
+     background-color: rgb(255,255,255);
+}
+
+.main-fragment {
+     width: 58em;
+     height: 35em;
+}
+
+.first-art-div, .second-art-div, .third-art-div, .header-div, .cite-div {
+     width: 58em;
+}
+
+.header-div {
+     display: flex;
+     flex-direction: column;
+     height: 3.5em;
+     margin-bottom: 2em;
+}
+
+.header-text, .main-text-span {
+     font-family: Helvetica, sans-serif;
+}
+
+.header-text {
+     font-size: 42pt;
+}
+
+.first-art-div, .second-art-div, .third-art-div {
+     margin-bottom: 0.2em;
+}
+
+.first-art-div {
+     height: 9em;
+}
+
+.main-text-span {
+     color: #808080;
+     font-size: 14pt;
+     line-height: 1.2;
+}
+
+.first-art-div::first-letter{
+     font-size: 110pt;
+     font-family:  "Playfair Display";
+     color: #000;
+     float: left;
+     line-height: 0.78;
+     margin-right: 0.15em;
+}
+
+.second-art-div {
+     height: 6em;
+}
+
+.third-art-div {
+     height: 5em;
+}
+
+.cite-div {
+     height: 4em;
+     margin-top: 2em;
+}
+
+.italic {
+     font-style: italic;
+     font-size: 24px;
+     margin-top: 1em;
+ }
+
+.button-div {
+     height: 3.5em;
+     width: 13em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.discover-button
+{
+     width: 100%;
+     height: 100%;
+     color: #e27878;
+     text-align: center;
+     border: 1px solid;
+     line-height: 3.2;
+     text-decoration: none;
+}

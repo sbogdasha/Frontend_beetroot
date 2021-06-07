@@ -1,0 +1,85 @@
+.three-steps {
+    background-color: $bg-three-steps; 
+    height: 337px;   
+}
+
+.steps {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__step {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $icon-text;
+    }
+}
+
+.step {
+
+    &__icon {
+        height: 59px;
+        font-size: 59px;
+    } 
+
+    &__icon--blue {
+        color: $loupe-icon;
+    }
+
+    &__icon--lightblue {
+        color:$thumb-icon;
+    }
+
+    &__icon--lightred {
+        color:$check-icon;
+    }
+
+    &__text {
+        height: 61px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: 'Aleo', serif;
+        font-size: 36px;
+    }
+}
+
+.dots {
+    width: 8em;
+    height: 6em;
+    border-top: 2px dotted grey;
+    border-radius: 100%;
+}
+
+@media screen and (max-width:1100px){
+    .step {
+        &__text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .step {
+       margin-top: 20px;
+        &__text {
+            margin-left: 15px;
+            font-size: 14px;
+        }
+        &__icon {
+            margin-top: 20px;
+            height: 20px;
+            font-size: 20px;
+        } 
+    }
+
+    .dots {
+        width: 4em;
+        height: 3em;
+        border-top: 2px dotted grey;
+        border-radius: 100%;
+    }
+}

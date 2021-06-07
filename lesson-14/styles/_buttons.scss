@@ -1,0 +1,73 @@
+.button {
+  height: 55px;
+  width: 200px;
+  outline: none;
+  color: $color-font-light;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: $font-main;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px $color-shadow-button;
+  border: none;
+  &__icon {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #9d9d9d;
+  }
+  &__title {
+    width: 300px;
+    height: 100px;
+    @include flex-center;
+    text-transform: none;
+
+    @media screen and (max-width: 1024px) {
+      width: 200px;
+    }
+  }
+  &--big {
+    height: 100px;
+    width: 400px;
+    @include flex-beetween;
+    color: $color-font-dark;
+    font-weight: 700;
+
+    @media screen and (max-width: 1024px) {
+      width: 300px;
+    }
+  }
+  &--header {
+    background-color: $color-bg-button-header;
+  }
+  &--contact {
+    background-color: $color-bg-button-contact;
+    box-shadow: none;
+
+    @media screen and (max-width: 1024px) {
+      width: 150px;
+    }
+  }
+  &--service {
+    background-color: $color-bg-button-service;
+  }
+  &--gallery {
+    background-color: $color-bg-button-gallery;
+    box-shadow: none;
+  }
+  &--subscribe {
+    background-color: $color-bg-button-subscribe;
+    box-shadow: none;
+  }
+  &--blog {
+    background-color: $color-bg-button-blog;
+    box-shadow: none;
+  }
+  &--hover:hover {
+    transform: scale(1.02);
+  }
+}

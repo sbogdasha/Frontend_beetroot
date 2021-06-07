@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    height: 10vh;
+    background-color: $color-bg-footer;
+    justify-content: center;
+    color: $color-font-footer;
+    &__container {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__logo {
+        font-size: 25px;
+        font-weight: 500;
+        font-family: $font-logo;
+    }
+    &__designer {
+        @extend .footer__copyright;
+        &--red {
+            color: $color-font-footer-add;
+            font-weight: 600;
+        }
+    }
+}

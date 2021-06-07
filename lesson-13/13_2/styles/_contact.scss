@@ -1,0 +1,30 @@
+.contact {
+  height: 431px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    width: 903px;
+  }
+  &__border {
+    height: 297px;
+    padding-bottom: 46px;
+  }
+  &__button {
+    width: 395px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background-color: $color-bg-button;
+    color: $color-font-light;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}

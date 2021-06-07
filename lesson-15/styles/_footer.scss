@@ -1,0 +1,41 @@
+.footer {
+  height: 90px;
+  @include flex-center;
+  background-color: $color-bg-footer;
+  color: $color-font-footer;
+  &__container {
+    @include flex-beetween;
+    @include container-width;
+    
+    @media screen and (max-width: 767px) {
+      width: 90%;
+    }
+  
+  }
+  &__copyright {
+    font-size: 16px;
+    font-weight: 500;
+
+    @media screen and (max-width: 767px) {
+      width: 38%;
+      font-size: 13px;
+    }
+  
+  }
+  &__logo {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: $font-logo;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+  &__designer {
+    @extend .footer__copyright;
+    &--red {
+      color: $color-font-footer-add;
+      font-weight: 600;
+    }
+  }
+}

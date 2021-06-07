@@ -1,0 +1,133 @@
+.castle {
+    @include background($bg-image2);  
+    height: 685px;   
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.text-and-pics {
+    display: flex;
+    height: 685px;
+}
+
+.text-div {
+    color: $white-text;
+    width: 541px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__bg {
+        height: 371px;
+    }
+
+    &__big-title {
+        font-family: 'Aleo', serif;
+        font-size: 36px;
+    }
+
+    &__paragraph {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 40px 0px;
+    }
+
+    &__button {
+        width: 223px;
+        height: 60px;
+        background: $blue-color;
+        color: $white-text;
+    }
+
+}
+
+.text-and-pics {
+
+&__pictures {
+width: 570px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+}
+
+.image {
+    &__bungalo {
+        margin-left: 95px;
+    }
+
+    &__hills {
+        margin-left: 220px;
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    
+    .text-and-pics {
+
+        &__pictures {
+        width: 370px;
+        }
+    }
+    .image {
+        &__bungalo {
+            margin-top: 160px;
+            margin-left: 0px;
+            max-width: 100%;
+        }
+    
+        &__hills {
+            margin-top: 30px;
+            margin-left: 0px;
+            max-width: 100%;
+        }
+    
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    
+    .text-and-pics {
+        display: flex;
+        flex-direction: column;
+        height: 685px;
+    }
+
+    .image {
+        &__bungalo {
+            margin: 0px;
+            margin-left: 12px;
+            max-width: 80%;
+        }
+    
+        &__hills {
+            margin: 0px;
+            margin-left: 12px;
+            max-width: 80%;
+        }
+    
+    }
+    .text-div {
+        width: 320px;
+
+        &__big-title {
+            font-size: 28px;
+        }
+
+        &__paragraph {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        &__button {
+            margin-left: 48px;
+        }
+    }
+}

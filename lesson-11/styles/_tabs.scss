@@ -1,0 +1,56 @@
+.main {
+  &__tabs {
+    @include flex-column;
+  }
+  &__tabs-container {
+    @include flex-between;
+    flex-wrap: wrap;
+  }
+  &__tabs-box {
+    @include flex-between;
+    width: 660px;
+    height: 174px;
+  }
+}
+.tab,
+.tab-3d {
+  @include flex-center;
+  width: 165px;
+  height: 72px;
+  font-family: $font-additional;
+  font-size: 28px;
+  color: #bdc3c7;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid #e1e5e6;
+}
+.tab-3d {
+  border: 1px solid #e2e5e5;
+  color: #7f8c8d;
+  background-color: #ffffff;
+}
+.tab-3d--green_hover:hover {
+  border: none;
+  color: $color-font-main;
+  background-color: $color-bg-green;
+}
+.tab-3d--red_hover:hover {
+  border: none;
+  color: $color-font-main;
+  background-color: $color-bg-red;
+}
+.tab-3d:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.tab-3d:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.tab--green_hover:hover {
+  color: #454c4d;
+  border-bottom: 4px solid $color-bg-green;
+}
+.tab--red_hover:hover {
+  color: #454c4d;
+  border-bottom: 4px solid $color-bg-red;
+}

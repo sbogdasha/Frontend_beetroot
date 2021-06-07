@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-main;
+  color: $color-font-dark;
+}
+.main {
+  @include flex-center;
+  flex-direction: column;
+  width: 100%;
+
+  &__container {
+    width: 100%;
+    @include flex-center;
+    &--about {
+      background-color: $color-bg-about;
+      height: 700px;
+    }
+    &--service {
+      background-color: $color-bg-service;
+      height: 790px;
+    }
+    &--gallery {
+      background-color: $color-bg-gallery;
+      height: 1536px;
+    }
+    &--subscribe {
+      height: 500px;
+      background-color: $color-bg-subscribe;
+      background-image: url(../img/subscribe-bg.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    &--blog {
+      height: 864px;
+      background-color: $color-bg-blog;
+    }
+    &--contact {
+      height: 866px;
+      background-image: url(../img/contact-bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+  }
+}
+.title {
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 700;
+}
+.description {
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+}

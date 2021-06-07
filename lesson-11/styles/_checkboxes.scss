@@ -1,0 +1,99 @@
+.main {
+  &__checkboxes-container {
+    display: flex;
+  }
+  &__checkbox-container {
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
+  &__checkmark-container {
+    display: flex;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  &__checkmark-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36px;
+    width: 36px;
+    background-color: #e8ebec;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+  }
+  &__checkmark-container &__checkbox:checked ~ &__checkmark--green {
+    background-image: linear-gradient(
+      $color-green-bg-grad-top,
+      $color-green-bg-grad-bottom
+    );
+    border: 1px solid $color-green-border;
+  }
+  &__checkmark-container &__checkbox:checked ~ &__checkmark--yellow {
+    background-image: linear-gradient(
+      $color-yellow-bg-grad-top,
+      $color-yellow-bg-grad-bottom
+    );
+    border: 1px solid $color-yellow-border;
+  }
+  &__checkmark-container &__checkbox:checked ~ &__checkmark--red {
+    background-image: linear-gradient(
+      $color-red-bg-grad-top,
+      $color-red-bg-grad-bottom
+    );
+    border: 1px solid $color-red-border;
+  }
+  &__checkmark-container &__checkbox:checked ~ &__checkmark--blue {
+    background-image: linear-gradient(
+      $color-blue-bg-grad-top,
+      $color-blue-bg-grad-bottom
+    );
+    border: 1px solid $color-blue-border;
+  }
+  &__checkmark-container &__checkbox:checked ~ &__checkmark--grey {
+    background-image: linear-gradient(
+      $color-grey-bg-grad-top,
+      $color-grey-bg-grad-bottom
+    );
+    border: 1px solid $color-grey-border;
+  }
+  &__checkmark-container &__checkbox:disabled ~ &__checkmark--green,
+  &__checkmark-container &__checkbox:disabled ~ &__checkmark--yellow,
+  &__checkmark-container &__checkbox:disabled ~ &__checkmark--red,
+  &__checkmark-container &__checkbox:disabled ~ &__checkmark--blue,
+  &__checkmark-container &__checkbox:disabled ~ &__checkmark--grey {
+    opacity: 0.5;
+  }
+  &__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  &__checkmark-container &__checkbox:checked ~ &__checkmark:after {
+    display: block;
+  }
+  &__checkmark-container &__checkmark:after {
+    width: 5px;
+    height: 10px;
+    left: 13px;
+    top: 7px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

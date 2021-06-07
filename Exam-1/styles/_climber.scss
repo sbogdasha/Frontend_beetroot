@@ -1,0 +1,106 @@
+.climber {
+    @include background($bg-image5);  
+    height: 731px;
+    
+    &__title {
+        height: 247px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Aleo', serif;
+        font-size: 36px;
+        color: $white-text;
+    }
+
+    &__content {
+        height: 284px;
+        display: flex;
+    }
+
+    &__picture {
+        width: 445px;
+    }
+
+    &__textblock {
+        width: 665px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white-text ;
+        background-color: $bg-climber-paragraph;
+    }
+}
+
+.textblock {
+    &__text {
+        width: 555px;
+        height: 189px;
+    }
+}
+
+.text {
+    &__subtitle {
+        height: 50px;
+        display: flex;
+        align-items: flex-start;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+
+    &__paragraph {
+        height: 42px;
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 16px;
+        line-height: 1.5;   
+    }
+    
+}
+
+.fa-quote-left {
+    color: $blue-color;
+}
+
+@media screen and (max-width:1100px){
+    .climber { 
+    &__content {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}
+
+.textblock {
+    display: flex;
+    justify-content: flex-start;
+    width: 430px;
+    &__text {
+        height: 0px;
+        width: 430px;
+    }
+}
+    
+.text {
+    &__subtitle {
+        height: 40px;
+        font-size: 16px;
+    }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .textblock {
+        display: flex;
+        justify-content: flex-start;
+        width: 320px;
+        &__text {
+            height: 0px;
+            width: 320px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.main {
+  &__buttons {
+    @include flex-column;
+  }
+  &__buttons-container {
+    height: 174px;
+    @include flex-between;
+    align-items: center;
+  }
+}
+.button {
+  width: 275px;
+  height: 86px;
+  font-family: $font-main;
+  color: $color-font-main;
+  font-weight: 500;
+  font-size: 34px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.button--green {
+  @include buttons-color(green);
+}
+.button--yellow {
+  @include buttons-color(yellow);
+}
+.button--red {
+  @include buttons-color(red);
+}
+.button--blue {
+  @include buttons-color(blue);
+}
+.button--grey {
+  @include buttons-color(grey);
+}
+.button--active_green {
+  background-color: $color-bg-green;
+}
+.button--active_yellow {
+  background-color: $color-bg-yellow;
+}
+.button--active_red {
+  background-color: $color-bg-red;
+}
+.button--active_blue {
+  background-color: $color-bg-blue;
+}
+.button--active_grey {
+  background-color: $color-bg-grey;
+}
+.button--hover_green {
+  @extend .button--active_green;
+  box-shadow: inset -2px 0 4px 2px $color-green-border;
+}
+.button--hover_yellow {
+  @extend .button--active_yellow;
+  box-shadow: inset -2px 0 4px 2px $color-yellow-border;
+}
+.button--hover_red {
+  @extend .button--active_red;
+  box-shadow: inset -2px 0 4px 2px $color-red-border;
+}
+.button--hover_blue {
+  @extend .button--active_blue;
+  box-shadow: inset -2px 0 4px 2px $color-blue-border;
+}
+.button--hover_grey {
+  @extend .button--active_grey;
+  box-shadow: inset -2px 0 4px 2px $color-grey-border;
+}

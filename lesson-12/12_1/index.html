@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
+    />
+    <meta name="keywords" content="Beetroot Academy, Homework 12" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/index.css" />
+    <title>Homework 12.1</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__top">
+          <div class="main__top-container">
+            <div class="main__title-container">
+              <span class="main__title">Contact</span>
+            </div>
+            <div class="main__utitle-container">
+              <span class="main__under-title"
+                >For new projects, ideas, business or anything you'd like to
+                discuss, contact with me!</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="main__bottom">
+          <form
+            class="main__form"
+            action="#"
+            method="GET"
+            enctype="multipart/form-data"
+          >
+            <div class="main__left">
+              <div class="main__contact contact">
+                <input
+                  type="text"
+                  name="name"
+                  class="contact__input"
+                  placeholder="Your name..."
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="contact__input"
+                  placeholder="Your email..."
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  class="contact__input"
+                  placeholder="Your phone number..."
+                  pattern="[0-9]{10}"
+                  required
+                />
+                <textarea
+                  type="text"
+                  name="message"
+                  class="contact__input contact__input--message"
+                  placeholder="Your message..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="main__right">
+              <div class="main__right-container">
+                <div class="main__contact-info">
+                  <span class="main__info-title">Address</span>
+                  <span class="main__info-content"
+                    >123 City name, Street City, Country</span
+                  >
+                </div>
+                <div class="main__contact-info">
+                  <span class="main__info-title">Email</span>
+                  <span class="main__info-content">cahee@domain.com</span>
+                </div>
+                <div class="main__contact-info">
+                  <span class="main__info-title">Phone</span>
+                  <span class="main__info-content">+012 345 6789</span>
+                </div>
+                <div class="main__buttons-container">
+                  <input
+                    type="reset"
+                    class="main__button button"
+                    value="Reset"
+                  />
+                  <input
+                    type="submit"
+                    formaction="#"
+                    class="main__button button"
+                    value="Submit"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <span class="footer__copyright"
+          >&#xA9; 2015 Company. All right reserved.</span
+        >
+        <span class="footer__logo">Cahee</span>
+        <span class="footer__designer"
+          >Made with <span class="footer__designer--red">love</span> by
+          Auskteez</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

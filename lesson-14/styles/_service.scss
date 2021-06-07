@@ -1,0 +1,33 @@
+.service {
+  @extend .about;
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left-container {
+    width: 48%;
+    display: flex;
+  }
+  &__buttons {
+    height: 460px;
+    width: 100%;
+    @include flex-beetween;
+    flex-direction: column;
+  }
+  &__right-container {
+    width: 48%;
+    @include flex-center;
+    background-image: url(../img/service-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__title-container {
+    @include flex-center;
+  }
+  &__title {
+    color: $color-font-light;
+    text-align: center;
+  }
+}

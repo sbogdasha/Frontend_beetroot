@@ -1,0 +1,15 @@
+.nav-and-section {
+    height: 820px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media screen and (max-width:1100px){
+    
+}
+
+@media screen and (max-width: 425px) {
+    .nav-and-section {
+        flex-direction: column;
+    }
+}

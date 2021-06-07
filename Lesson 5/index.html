@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+     <title>Shopping List</title>
+     <link rel="stylesheet" href="styles/style.css">
+ </head>
+ <body>
+     <header>
+        <div class = header-div>
+             <h1 class= "main-h1">CSS Dinner Shopping List</h1>
+             <h2 class= "main-h2">Let's go to the mall!</h2>
+        </div>
+    </header>
+    <main>
+        <form action="handler" method="POST" enctype="multipart/form-data" name="shop-list"></form>
+            <ul class="list">
+                <li class="list-item">
+                     <input type="checkbox" class="my-checkbox" name="ShoppingList" value="pickels" id="check1">
+                     <label class="check-label" for="check1">
+                         <span class="list-main-text">A lot of pickels</span>
+                         <span class="list-small-text">for the next lessons about CSS</span></label>
+                </li>
+                <li class=list-item>
+                     <input type="checkbox" class="my-checkbox" name="ShoppingList" value="apples" id="check2">
+                     <label class="check-label" for="check2">
+                         <span class="list-main-text">10 apples</span>
+                         <span class="list-small-text">for more CSS manipulations</span></label>
+                </li>
+                <li class=list-item>
+                     <input type="checkbox" class="my-checkbox" name="ShoppingList" value="oranges" id="check3">
+                     <label class="check-label" for="check3">
+                         <span class="list-main-text">30 oranges</span>
+                         <span class="list-small-text">because they are awsome</span></label>
+                </li>
+                <li class=list-item>
+                     <input type="checkbox" class="my-checkbox" name="ShoppingList" value="plates" id="check4">
+                     <label class="check-label" for="check4">
+                         <span class="list-main-text">13 plates</span>
+                         <span class="list-small-text">hmm... they always disappear</span></label>
+                </li>
+                <li class=list-item>
+                    <input type="checkbox" class="my-checkbox" name="ShoppingList" value="bentos" id="check5">
+                     <label class="check-label" for="check5">
+                         <span class="list-main-text">15 bentos</span>
+                </li>
+                <li class=list-item>
+                     <input type="checkbox" class="my-checkbox" name="ShoppingList" value="sake" id="check6">
+                     <label class="check-label" for="check6">
+                         <span class="list-main-text">1 bottle of Sake ^_^</span>
+                         <span class="list-small-text">for my friends</span></label>
+                </li>
+            </ul>
+            <div class="bon-appetit">
+                    <a href="index.html" class="refresh">Bon appetit :)</a>
+                </div>
+        </form>    
+    </main>
+ </body>
+ </html>

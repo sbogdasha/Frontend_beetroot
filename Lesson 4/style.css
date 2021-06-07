@@ -1,0 +1,53 @@
+* {
+     margin: 0;
+     padding: 0;
+ }
+ .deftext {
+     font-size: 18px;
+     margin-bottom: 2%;
+ }
+ .main-header {
+     background-color: rgb(164,42,43);
+     text-align: center;
+     margin-bottom: 2%;
+     color: white;
+ }
+
+ .main-img {
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 2%;
+     width: 100%;
+ }
+
+ .blue {
+     color: #4fa7ff;
+ }
+
+ .main-footer {
+     font-size: 20px;
+     color: white;
+     background-color: black;
+
+ }
+
+ .fat-type {
+     font-weight: bold;
+ }
+
+ .italic-type {
+     font-style: italic;
+ }
+
+
+    .cars {
+     border: black 3px;
+     border-style: dashed;
+     width: 10%;
+     margin-bottom: 2%;
+ }
+
+     .center {
+         text-align: center;
+     }

@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --fontF-p: "PT Sans", sans-serif;
+  --fontF-txt: "Montserrat", sans-serif;
+  --borderC-hover: #0ec8cb;
+  --borderC: #ececec;
+}
+
+.wrapper {
+  width: 60em;
+  margin: auto;
+}
+
+.intro {
+  width: 38.5625em;
+  margin: auto;
+  margin-top: 145px;
+  margin-bottom: 86px;
+  text-align: center;
+}
+
+.intro span {
+  font-family: var(--fontF-txt);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 6px;
+  line-height: 2.5;
+  color: #898f99;
+  margin-bottom: 23px;
+}
+.intro h1 {
+  font-family: var(--fontF-txt);
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 10px;
+  color: #0ec8cb;
+  margin-bottom: 45px;
+}
+
+.intro p,
+.kinds-of-work p {
+  font-family: var(--fontF-p);
+}
+
+.intro p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #999999;
+  text-transform: uppercase;
+  line-height: 1.667;
+  margin: auto;
+  width: 30em;
+}
+
+.kinds-of-work {
+  border-top: 1px solid var(--borderC);
+  border-bottom: 1px solid var(--borderC);
+  background-color: #f7f7f7;
+  margin-bottom: 140px;
+}
+
+.kinds-of-work div {
+  width: 15em;
+  height: 26.5em;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border-left: 1px solid var(--borderC);
+  margin-left: -4px;
+  padding: 0 30px;
+}
+
+.kinds-of-work div:first-child {
+  margin-left: 0px;
+}
+
+.kinds-of-work div:last-child {
+  border-right: 1px solid var(--borderC);
+}
+
+.kinds-of-work i,
+.kinds-of-work h3 {
+  color: #1b1b1b;
+}
+
+.kinds-of-work i {
+  display: block;
+  font-size: 64px;
+  padding: 64px 0;
+}
+
+.kinds-of-work h3 {
+  font-family: var(--fontF-txt);
+  font-weight: 400;
+  font-size: 21px;
+  margin-bottom: 35px;
+}
+
+.kinds-of-work p {
+  font-size: 14px;
+  color: #777777;
+  height: 101px;
+}
+
+.kinds-of-work > div:hover {
+  background-color: #0ec8cb;
+  border-left: 1px solid var(--borderC-hover);
+  border-right: 1px solid var(--borderC-hover);
+}
+.kinds-of-work > div:hover p,
+.kinds-of-work > div:hover h3,
+.kinds-of-work > div:hover i {
+  color: #fff;
+}

@@ -1,0 +1,18 @@
+.service {
+  height: 488px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/services-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  &__container {
+    width: 903px;
+  }
+  &__border {
+    height: 264px;
+    border: 2px solid $color-border-light;
+    color: $color-font-light;
+  }
+}

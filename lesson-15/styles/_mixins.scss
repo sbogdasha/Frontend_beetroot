@@ -1,0 +1,19 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-beetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin container-width {
+  width: 80%;
+  max-width: 1500px;
+
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+    width: 90%;
+  }
+}

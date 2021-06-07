@@ -1,0 +1,43 @@
+.card-container {
+  height: 174px;
+  perspective: 600px;
+  position: relative;
+  width: 238px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  background: #393f45;
+  color: #fff;
+  line-height: 150px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*Your code*/
+
+div {
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+}
+
+.card .side {
+  transition: transform 0.5s linear;
+}
+
+.card:hover .side {
+  transform: rotateY(360deg);
+}
+
+.card:hover .back {
+  transform: rotateY(180deg);
+}

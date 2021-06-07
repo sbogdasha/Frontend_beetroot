@@ -1,0 +1,98 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin paginations-active($pagination-active) {
+  @if $pagination-active == green {
+    background-color: $color-bg-green;
+  } @else if $pagination-active == yellow {
+    background-color: $color-bg-yellow;
+  } @else if $pagination-active == red {
+    background-color: $color-bg-red;
+  } @else if $pagination-active == blue {
+    background-color: $color-bg-blue;
+  }
+}
+
+@mixin buttons-color($button-color) {
+  @if $button-color == green {
+    background-image: linear-gradient(
+      $color-green-bg-grad-top,
+      $color-green-bg-grad-bottom
+    );
+    border: 1px solid $color-green-border;
+    border-bottom: 2px solid $color-green-border;
+  } @else if $button-color == yellow {
+    background-image: linear-gradient(
+      $color-yellow-bg-grad-top,
+      $color-yellow-bg-grad-bottom
+    );
+    border: 1px solid $color-yellow-border;
+    border-bottom: 2px solid $color-yellow-border;
+  } @else if $button-color == red {
+    background-image: linear-gradient(
+      $color-red-bg-grad-top,
+      $color-red-bg-grad-bottom
+    );
+    border: 1px solid $color-red-border;
+    border-bottom: 2px solid $color-red-border;
+  } @else if $button-color == blue {
+    background-image: linear-gradient(
+      $color-blue-bg-grad-top,
+      $color-blue-bg-grad-bottom
+    );
+    border: 1px solid $color-blue-border;
+    border-bottom: 2px solid $color-blue-border;
+  } @else if $button-color == grey {
+    background-image: linear-gradient(
+      $color-grey-bg-grad-top,
+      $color-grey-bg-grad-bottom
+    );
+    border: 1px solid $color-grey-border;
+    border-bottom: 2px solid $color-grey-border;
+  }
+}
+
+@mixin paginations-3d-active($paginations-3d-active) {
+  @if $paginations-3d-active == green {
+    background-image: linear-gradient(
+      $color-green-bg-grad-top,
+      $color-green-bg-grad-bottom
+    );
+    color: $color-font-main;
+    border: 1px solid $color-green-border;
+  } @else if $paginations-3d-active == yellow {
+    background-image: linear-gradient(
+      $color-yellow-bg-grad-top,
+      $color-yellow-bg-grad-bottom
+    );
+    color: $color-font-main;
+    border: 1px solid $color-yellow-border;
+  } @else if $paginations-3d-active == red {
+    background-image: linear-gradient(
+      $color-red-bg-grad-top,
+      $color-red-bg-grad-bottom
+    );
+    color: $color-font-main;
+    border: 1px solid $color-red-border;
+  } @else if $paginations-3d-active == blue {
+    background-image: linear-gradient(
+      $color-blue-bg-grad-top,
+      $color-blue-bg-grad-bottom
+    );
+    color: $color-font-main;
+    border: 1px solid $color-blue-border;
+  }
+}

@@ -1,0 +1,34 @@
+.about {
+  @include flex-center;
+  @include container-width;
+  &__container {
+    width: 100%;
+    height: 100%;
+    @include flex-beetween;
+  }
+  &__title-container {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+  }
+  &__title {
+    color: $color-font-light;
+  }
+  &__description {
+    color: $color-font-light;
+  }
+  &__image-container {
+    width: 48%;
+    min-width: 400px;
+    max-width: 700px;
+
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

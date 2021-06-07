@@ -1,0 +1,43 @@
+.header {
+  height: 1072px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  &__container {
+    width: 47%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo-container {
+    padding-bottom: 40px;
+  }
+  &__title-container {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-font-light;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 10px;
+  }
+  &__description {
+    width: 580px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 2;
+  }
+}
