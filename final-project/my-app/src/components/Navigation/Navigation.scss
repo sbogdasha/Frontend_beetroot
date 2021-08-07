@@ -1,0 +1,29 @@
+@import '../../styles/main.scss';
+
+.navigation {
+    &__container {
+        display: flex;
+    }
+
+    &__list {
+        @extend .navigation__container;
+        justify-content: space-between;
+        list-style: none;
+        
+    }
+
+    &__item {
+        font-family: ProximaNovaMedium;
+        font-size: 24px;
+        margin-left: 25px;
+    }
+
+    &__link {
+        color: $white-color;
+        text-decoration: none;
+    }
+}
+
+.navigation__link:hover {
+    color: $black-color;
+}
