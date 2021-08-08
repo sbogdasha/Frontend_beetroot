@@ -5,11 +5,13 @@ import PlayGameBtn from '../PlayGameBtn/PlayGameBtn';
 export default function Header(){
     return (
         <header id="header" className="header">
-            <a href="#header">
+            <div className="header-container container">
+            <a className="header-logo-link" href="#welcome">
                 <p className="header__logo">NFT FINANCIER</p>
             </a>
             <Navigation></Navigation>
             <PlayGameBtn/>
+            </div>
         </header>
     );
 }

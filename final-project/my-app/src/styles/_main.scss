@@ -1,5 +1,7 @@
 @import './variables';
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 
 * {
@@ -58,39 +60,66 @@ section {
 
 }
 
+#root {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
 @media screen and (max-width: 1170px){
     .container {
-        width: 1000px
+        width: 1000px;
+        display: flex;
     }
 }
 
 @media screen and (max-width: 1000px){
     .container {
-        width: 900px
+        width: 900px;
+        display: flex;
     }
 }
 
 @media screen and (max-width: 900px){
     .container {
         width: 850px;
+        display: flex;
     }
 }
 
 @media screen and (max-width: 850px){
     .container {
+        width: 750px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .container {
         width: 650px;
+        display: flex;
     }
 }
 
 @media screen and (max-width: 650px){
     .container {
+        width: 550px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container {
         width: 450px;
+        display: flex;
     }
 }
 
 @media screen and (max-width: 450px){
     .container {
         width: 350px;
+        display: flex;
     }
 }
 

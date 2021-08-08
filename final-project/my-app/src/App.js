@@ -1,5 +1,6 @@
 import './App.scss';
-import Header from './components/Header/Header';
+import Roadmap from './components/Roadmap/Roadmap';
+import Game from './components/Game/Game';
 import Welcome from './components/Welcome/Welcome';
 import About from './components/About/About';
 
@@ -7,9 +8,7 @@ import About from './components/About/About';
 function App() {
   return (
     <div className="App">
-        <Header/>
-        <Welcome/>
-        <About/>
+        <Roadmap></Roadmap>
     </div>
   );
 }

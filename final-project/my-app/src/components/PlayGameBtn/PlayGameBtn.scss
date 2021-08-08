@@ -5,5 +5,37 @@
     width: 309px;
     border-radius: 50px;
     font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
     background-color: $play-btn-color;
+}
+
+.play-game-btn:hover {
+    background-color: $logo-green-color;
+}
+
+@media screen and (max-width: 1170px){
+    .play-game-btn{
+        height: 70px;
+        width: 200px;
+        border-radius: 50px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .play-game-btn{
+        height: 60px;
+        width: 150px;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .play-game-btn{
+        height: 50px;
+        width: 100px;
+        border-radius: 50px;
+        font-size: 14px;
+    }
 }

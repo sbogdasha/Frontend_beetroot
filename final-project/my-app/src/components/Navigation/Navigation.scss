@@ -13,7 +13,7 @@
     }
 
     &__item {
-        font-family: ProximaNovaMedium;
+        font-family: 'Source Sans Pro', sans-serif;
         font-size: 30px;
         margin-left: 25px;
     }
@@ -26,4 +26,103 @@
 
 .navigation__link:hover {
     color: $logo-green-color;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.hamburger__list {
+    background-color: $black-color;
+    list-style: none;
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    transition: margin .5s;
+    margin: 0 0 0 32em;
+    display: none;
+}
+
+.hamburger__list.is-nav-open {
+    margin-left: 20em;
+}
+
+.hamburger__link {
+    text-decoration: none;
+    font-size: 24px;
+    color: $logo-green-color;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+
+@media screen and (max-width: 650px){
+    .navigation__container {
+        display: none;
+    }
+
+    .play-game {
+        display: none;
+    }
+
+    .play-game--ham {
+        display: block;
+    }
+
+    .hamburger__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1000;
+        position: relative;
+    }
+
+    .fa-bars {
+        display: block;
+        color: $logo-green-color;
+        font-size: 24px;
+        margin-top: 13em;
+        margin-left: 50%;
+    }
+} 
+
+@media screen and (max-width: 550px){
+
+    .hamburger__list {
+        margin: 0 0 0 25.2em;
+    }
+
+    .hamburger__list.is-nav-open {
+        margin-left: 15em;
+    }
+
+    .fa-bars {
+        margin-left: 40%;
+    }
+} 
+
+@media screen and (max-width: 450px){
+
+    .hamburger__list {
+        margin: 0 0 0 25.2em;
+    }
+
+    .hamburger__list.is-nav-open {
+        margin-left: 10em;
+    }
+
+    .fa-bars {
+        margin-left: 30%;
+    }
+} 
+
+@media screen and (max-width: 1170px){
+    .navigation__item {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .navigation__item {
+        font-size: 18px;
+    }
 }
