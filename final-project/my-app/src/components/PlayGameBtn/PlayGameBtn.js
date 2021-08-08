@@ -1,6 +1,6 @@
 import './PlayGameBtn.scss';
 
-export default function Welcome() {
+export default function PlayGameBtn() {
     return (
        
         <div className="play-game">
