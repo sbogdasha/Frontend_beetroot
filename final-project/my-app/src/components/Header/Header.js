@@ -1,5 +1,6 @@
 import './Header.scss';
 import Navigation from '../Navigation/Navigation';
+import PlayGameBtn from '../PlayGameBtn/PlayGameBtn';
 
 export default function Header(){
     return (
@@ -8,6 +9,7 @@ export default function Header(){
                 <p className="header__logo">NFT FINANCIER</p>
             </a>
             <Navigation></Navigation>
+            <PlayGameBtn/>
         </header>
     );
 }

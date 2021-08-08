@@ -5,26 +5,45 @@
     height: 1200px;
     background-size: cover;
 
-    &-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 750px;
-        &__heading {
-            font-family: ProximaNovaBold;
-            font-size: 60px;
-            color: $white-color;
-            margin-bottom: 15px;
-        }
-
-        &__subheading {
-            width: 650px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: italic;
-            font-size: 28px;
-            color: $white-color;
-        }
+    &__text-block {
+        width: 1400px;
+        height: 935px;
+        margin-top: 115px;
     }
+
+    &__neftie-block {
+        width: 300px;
+        height: 935px;
+        margin-top: 500px;
+        text-align: -webkit-center;
+    }
+
+    
+}
+
+.text-block {
+
+    &__main, &__neftie {
+        opacity: 0.5;
+        background-color: $black-color;
+        color: $white-color;
+    }
+
+    &__main {
+        width: 1350px;
+        height: 600px;
+        border-radius: 70px;
+    }
+
+    &__neftie {
+        width: 600px;
+        height: 210px;
+        border-radius: 80px;
+        margin-top: 112px;
+        margin-left: 750px;
+    }
+}
+
+.neftie-pic {
+    width: 100%;
 }

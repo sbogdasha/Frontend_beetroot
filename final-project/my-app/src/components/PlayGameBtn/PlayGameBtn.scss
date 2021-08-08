@@ -1,0 +1,9 @@
+@import '../../styles/main.scss';
+
+.play-game-btn {
+    height: 80px;
+    width: 309px;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: $play-btn-color;
+}
