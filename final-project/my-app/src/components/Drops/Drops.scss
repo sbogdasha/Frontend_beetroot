@@ -1,0 +1,62 @@
+@import '../../styles/main.scss';
+
+.drops {
+    height: 1680px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        height: 1400px;
+        flex-direction: column;
+    }
+
+    &__heading {
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__cards {
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link-btn {
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.pink-buttons-container {
+    height: 363px;
+    border-left: 3px solid $pink-bg-color;
+    border-right: 3px solid $pink-bg-color;
+    display: flex;
+    justify-content: center;
+}
+
+
+.gray-buttons-container {
+    height: 248px;
+    width: 1716px;
+    border-left: 3px solid $white-color;
+    border-right: 3px solid $white-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
+ 
+.drops-heading-txt {
+    font-family: 'Marck Script', cursive;
+    font-size: 76px;
+    color: $text-green-color;
+    text-align: center;
+}

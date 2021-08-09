@@ -1,0 +1,12 @@
+@import '../../styles/main.scss';
+
+.drops-btn {
+    height: 120px;
+    width: 477px;
+    border-radius: 50px;
+    background-color: $pink-bg-color;
+    border: 7.5px solid $white-color;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 39px;
+    font-weight: 900;
+}

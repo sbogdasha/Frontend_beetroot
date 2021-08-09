@@ -1,0 +1,29 @@
+@import '../../styles/main.scss';
+
+.about-pink-block {
+    width: 760px;
+    height: 400px;
+    background: $pink-bg-color;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pink-block-txt {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $white-color;
+    font-size: 36px;
+
+    &--black {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: $black-color;
+        font-size: 36px;
+        font-weight: bold;
+    }
+}
+
+.text-container {
+    width: 650px;
+    height: 225px;
+}

@@ -1,6 +1,7 @@
 import './Roadmap.scss';
 import Header from '../Header/Header';
 import { listOfRoadmapTextBlocks } from '../../mockData/roadmap-blocks__data';
+import Footer from '../Footer/Footer';
 
 export default function Roadmap(){
 
@@ -34,6 +35,7 @@ export default function Roadmap(){
                 </div>
             </div>
         </section>
+        <Footer></Footer>
         </>
     );
 }

@@ -6,12 +6,16 @@ export default function Welcome() {
             <div className="container">
                 <div className="welcome__text-block text-block">
                     <div className="text-block__main">
-                        <h1 className="text-block__header">NFT FINANCER</h1>
-                        <p className="text-block__main-text">Build your crazy financial empire with NFT Financier</p>
-                        <p className="text-block__main-text">Simple, Quick and Easy! Best Play to Earn Game!</p>
+                        <div className="main-text-container">
+                            <h1 className="text-block__header">NFT FINANCIER</h1>
+                            <p className="text-block__main-text">Build your crazy financial empire with NFT Financier!</p>
+                            <p className="text-block__main-text">Simple, Quick and Easy!</p>
+                        </div>
                     </div>
                     <div className="text-block__neftie">
-                        <p className="text-block__neftie-text">Hi, boss! I'm your personal assistant Neftie Earner. Let me bring you up to date!</p>
+                        <div className="neftie-text-container">
+                            <span className="text-block__neftie-text">Hi, boss! I'm your personal assistant <b>Neftie Earner.</b> Let me bring you up to date!</span>
+                        </div>
                     </div>
                 </div>
                 <div className="welcome__neftie-block">
