@@ -1,6 +1,5 @@
 import './Navigation.scss';
 import { listOfNavigationLinks } from '../../mockData/nav_data';
-import PlayGameBtn from '../PlayGameBtn/PlayGameBtn';
 
 export default function Navigation() {
   const NavItem = (list) => (list.map(elem => (
@@ -34,7 +33,7 @@ export default function Navigation() {
           </ul>
       </nav>
       <div className="hamburger">
-        <i onClick={openHam} class="fas fa-bars"></i>
+        <i onClick={openHam} className="fas fa-bars"></i>
           <ul className="hamburger__list" id="hamburger__list">
               {HamItem(listOfNavigationLinks)}
               <div className="play-game play-game--ham">

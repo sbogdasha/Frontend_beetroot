@@ -9,11 +9,9 @@ export default function MainPage(){
 
     return (
         <>
-        <Header></Header>
         <Welcome></Welcome>
         <About></About>
         <Drops></Drops>
-        <Footer></Footer>
         </>
     );
 }

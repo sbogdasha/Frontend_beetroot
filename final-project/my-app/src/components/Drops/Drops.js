@@ -11,7 +11,7 @@ export default function Drops(){
                 <div className="pink-buttons-container">
                     <div className="gray-buttons-container">
                         <PinkBtn text="ENTER THE GIVEAWAY" link="#" />
-                        <PinkBtn text="CHECK OUR ROADMAP" link="#"/>
+                        <PinkBtn text="CHECK OUR ROADMAP" link="/roadmap"/>
                     </div>
                 </div>
                 <div className="drops__heading">

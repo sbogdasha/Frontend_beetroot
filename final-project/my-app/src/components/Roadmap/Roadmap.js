@@ -24,7 +24,6 @@ export default function Roadmap(){
 
     return (
         <>
-        <Header></Header>
         <section id="roadmap" className="roadmap">
             <div className="roadmap-container container">
                 <div className="roadmap__title">
@@ -35,7 +34,6 @@ export default function Roadmap(){
                 </div>
             </div>
         </section>
-        <Footer></Footer>
         </>
     );
 }

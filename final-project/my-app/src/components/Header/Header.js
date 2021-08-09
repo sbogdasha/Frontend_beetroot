@@ -6,7 +6,7 @@ export default function Header(){
     return (
         <header id="header" className="header">
             <div className="header-container container">
-            <a className="header-logo-link" href="#welcome">
+            <a className="header-logo-link" href="/">
                 <p className="header__logo">NFT FINANCIER</p>
             </a>
             <Navigation></Navigation>

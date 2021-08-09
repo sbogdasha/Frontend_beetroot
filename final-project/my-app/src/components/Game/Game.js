@@ -1,10 +1,11 @@
 import './Game.scss';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 export default function Game() {
     return (
         <>
-        <Header></Header>
+
         <section className="game" id="game">
                 <div className="loading-circle">
                     <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
